@@ -65,10 +65,12 @@ console.log(cars);
 const petrolCars = cars.filter(car => {
     if (car.supply === 'benzina') {
         return true;
-    } else {
-        return false;
     }
 });
+
+/*
+const petrolCars = cars.filter(car => car.supply === 'benzina');
+*/
 
 console.log('Auto benzina: ', petrolCars);
 
@@ -76,10 +78,12 @@ console.log('Auto benzina: ', petrolCars);
 const gasolineCars = cars.filter(car => {
     if (car.supply === 'diesel') {
         return true;
-    } else {
-        return false;
     }
 });
+
+/*
+const gasolineCars = cars.filter(car => car.supply === 'diesel');
+*/
 
 console.log('Auto diesel: ', gasolineCars);
 
@@ -87,9 +91,11 @@ console.log('Auto diesel: ', gasolineCars);
 const otherCars = cars.filter(car => {
     if (car.supply !== 'diesel' && car.supply !== 'benzina') {
         return true;
-    } else {
-        return false;
     }
 });
+
+/*
+const otherCars = cars.filter(car => car.supply !== 'benzina && car.supply !== 'diesel');
+*/
 
 console.log('Auto diesel: ', otherCars);

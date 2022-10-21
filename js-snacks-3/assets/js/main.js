@@ -25,10 +25,12 @@ const animals = [
 
 console.log(animals);
 
-const mammals = animals.filter ( function(pet) {
-    if (pet.classe === 'mammiferi') {
-        return true;
-    }
-});
+// const mammals = animals.filter ( function(pet) {
+//     if (pet.classe === 'mammiferi') {
+//         return true;
+//     }
+// });
+
+const mammals = animals.filter(pet => pet.classe === 'mammiferi');
 
 console.log(mammals);

@@ -9,7 +9,11 @@ const names = ['pasquale', 'FABIO', 'andreA', 'GIAcomo', 'SiMoNe'];
 console.log(names);
 
 
-const camelCaseName = names.map(name => name.toLocaleLowerCase());
+const camelCaseName = names.map(name => {
+    const wordLowerCase = name.toLowerCase();
+    wordLowerCase.charAt(0).toUpperCase();
+    return wordLowerCase
+});
 console.log(camelCaseName);
 
 

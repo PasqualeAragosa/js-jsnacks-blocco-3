@@ -9,7 +9,7 @@ const names = ['pasquale', 'FABIO', 'andreA', 'GIAcomo', 'SiMoNe'];
 console.log(names);
 
 
-const camelCaseName = names.map(name => {name.classList.add('capitalize')});
+const camelCaseName = names.map(name => name.toLocaleLowerCase());
 console.log(camelCaseName);
 
 
